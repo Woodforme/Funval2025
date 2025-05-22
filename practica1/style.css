@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: blueviolet;
+    background-color: rgb(179, 123, 232);
 }
 #lista {
     display: flex;
@@ -15,4 +15,7 @@ header {
     display: flex;
 color: aqua;
 justify-content: center;
+}
+footer {
+    background-color: rgb(179, 123, 232);
 }

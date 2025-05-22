@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 16, 16);
+}
+.temail {
+    width: 90%;
+    margin-bottom: 5px;
+    color: azure;
+     border: 2px, color honeydew;
+      background-color: rgb(171, 129, 210);
+}
+.tpassword {
+    width: 90%;
+    color: azure;
+    border: 2px, color honeydew;
+    background-color: rgb(171, 129, 210);
+}
+body {
+    margin: 20px;
+    padding: 30px;
+    gap: 20px;
+}
+.caja-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px, 100px;
+    padding: 5px, 10px;
+    gap: 10px;
+  
+}
+
+.REGISTER {
+   
+    background-color: blue;
+    padding: 10px;
+    margin: 10px, 30, 15px,30;
+    border: solid 2px;
+}
+.LOGIN {
+    background-color: rgb(186, 53, 181);
+    margin: 10px;
+    border: solid 2px;
+    padding: 10px;
+}
+.tcheckbox {
+    display: inline;
+    align-items: center;
+    gap: 50px;
+    color: aliceblue;
+}
+#pfooter {
+    display: flex;
+color: aqua;
+justify-content: center;
+}
+h1 {
+    color: white;
+}
+
