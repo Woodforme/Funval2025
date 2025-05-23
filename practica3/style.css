@@ -1,0 +1,48 @@
+header {
+    background-color: green;
+}
+h1 {
+    justify-content: center;
+}
+ul {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    gap: 100px;
+}
+img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+h1 {
+    color: white;
+}
+button {
+    color: white;
+    background-color: greenyellow;
+}
+.seccion-hero {
+    background-color: bisque;
+    display: flex;
+    gap: -50px;
+    margin: 0;
+}
+.seccion1 {
+    background-color: rgb(192, 189, 189);
+    border: solid, gray;
+    margin: 10px;
+}
+footer {
+    background-color: black;
+    color: aliceblue;
+}
+#pfooter {
+    display: flex;
+color: aqua;
+justify-content: center;
+}
