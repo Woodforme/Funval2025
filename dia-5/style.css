@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor {
+    border: 2px solid black;
+    width: 300px;
+}
+.caja {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.caja1{
+    background-color: aquamarine;
+}
+.caja2{
+    background-color: blue;
+}
+.caja3{
+    background-color: blueviolet;
+}
+.caja4{
+    background-color: brown;
+}
+.caja5{
+    background-color: cadetblue;
+}
+.caja6{
+    background-color: cyan;
+}
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Desarrollador Web</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./tailwind.config.js">
+</head>
+<body class="bg-slate-500 text-white">
+    <header class=" py-4 px-6 flex justify-between items-center bg-slate-700">
+        <div class="flex items-center">
+            <img src="./img/Web-devloper.PNG" alt="Logo" class="h-10">
+            <nav class="ml-10">
+                <ul class="flex space-x-8">
+                    <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
+                    <li><a href="#habilidades" class="hover:text-white">Habilidades</a></li>
+                    <li><a href="#proyectos" class="hover:text-white">Proyectos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="bg-amber-200 text-white px-6 py-2 rounded-4xl font-bold hover:bg-opacity-90  border-2 focus:accent-amber-800">
+            Contacto
+        </button>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="bg-gradient-to-bl from-yellow-100 py-20 px-6 flex items-center">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-bold mb-4">Hola, soy <span class="text-amber-50">WOODLEINE FORMETUS</span></h1>
+                <h2 class="text-3xl mb-6">Desarrollador <span class="text-">Full Stack</span></h2>
+                <a href="#proyectos" class="bg-yellow-100 text-dark px-8 py-3 rounded-md font-bold text-lg inline-block">
+                    Ver mis proyectos
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./img/Woodleine F foto cv.jpg" alt="Foto del desarrollador" class="rounded-full border-4 border-amber-50 w-64 h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quién soy -->
+    <section class="py-16 px-6 bg-blue-300">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center">¿Quién soy?</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <p class="text-lg mb-6">
+                        Soy una apasionada desarrolladora web, full stack, front-end y back-end. Disfruto transformar ideas en productos funcionales y amigable. Manejo Java, JavaScript, HTML, CSS, tailwind etc...
+                    </p>
+                    <p class="text-lg">
+                        Cuando no estoy codificando, me gusta ver dibujos animados].
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-300 p-4 rounded-3xl text-center">
+                            <span class="text-amber-50 text-2xl font-bold"></span>
+                            <p>Proyectos full-stack</p>
+                        </div>
+                        <div class="bg-gray-300 p-4 rounded-3xl text-center">
+                            <span class="text-amber-50 text-2xl font-bold"></span>
+                            <p>Proyectos Front-end</p>
+                        </div>
+                        <div class="bg-gray-300 p-4 rounded-3xl text-center">
+                            <span class="text-amber-50 text-2xl font-bold">100%</span>
+                            <p>otras habilidades</p>
+                        </div>
+                        <div class="bg-gray-300 p-4 rounded-3xl text-center">
+                            <span class="text-amber-50 text-2xl font-bold">24/7</span>
+                            <p>Disponibilidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-16 px-6 bg-gradient-to-r from-emerald-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center">Mis Habilidades</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                 
+                <div class="bg-deepBlue p-6 rounded-lg text-center hover:transform hover:scale-105 transition">
+                    <img src="./assets/icons/html.svg" alt="HTML" class="h-16 mx-auto mb-4">
+                    <h3 class="font-bold">HTML5</h3>
+                    <p class="text-sm text-softGray">5 años</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="bg-highlight text-dark px-8 py-3 rounded-md font-bold text-lg inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Descargar CV
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-16 px-6 bg-deepBlue">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-10 text-center">Proyectos Destacados</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ejemplo de tarjeta de proyecto -->
+                <div class="bg-softGray bg-opacity-10 rounded-lg overflow-hidden hover:shadow-lg transition">
+                    <img src="./assets/project1.jpg" alt="Proyecto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce y Banco simple</h3>
+                        <p class="text-softGray mb-4">Plataforma de comercio electrónico con carrito de compras y pasarela de pago con un banco en linea (BANCO SIMPLE)</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-highlight bg-opacity-20 text-highlight px-3 py-1 rounded-full text-xs">React</span>
+                            <span class="bg-highlight bg-opacity-20 text-highlight px-3 py-1 rounded-full text-xs">Node.js</span>
+                            <span class="bg-highlight bg-opacity-20 text-highlight px-3 py-1 rounded-full text-xs">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-neonGreen hover:underline flex items-center">
+                            Ver proyecto
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 px-6 gradient-main">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-10 text-center">Contacto</h2>
+            <form class="bg-deepBlue p-8 rounded-lg">
+                <div class="mb-6">
+                    <label for="nombre" class="block mb-2">Nombre</label>
+                    <input type="text" id="nombre" class="w-full p-3 bg-dark border border-softGray rounded-md focus:outline-none focus:ring-2 focus:ring-highlight">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2">Correo electrónico</label>
+                    <input type="email" id="email" class="w-full p-3 bg-dark border border-softGray rounded-md focus:outline-none focus:ring-2 focus:ring-highlight">
+                </div>
+                <div class="mb-6">
+                    <label for="mensaje" class="block mb-2">Mensaje</label>
+                    <textarea id="mensaje" rows="5" class="w-full p-3 bg-dark border border-softGray rounded-md focus:outline-none focus:ring-2 focus:ring-highlight"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-highlight text-dark py-3 rounded-md font-bold text-lg hover:bg-opacity-90 transition">
+                    Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-blue-400 py-8 px-6 text-center text-softGray">
+        <p>© 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        <p class="mt-2">Desarrollado con ❤️ y código</p>
+         class="bg-blue-600 text-white flex flex-col gap-7 justify-center p-4"
+    >
+      <div class="w-full flex justify-center">
+        <h2 class="text-2xl font-semibold">Mis redes</h2>
+      </div>
+      <div class="flex w-full items-center justify-between px-6">
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */ /* nos ayuda a controlar las medidas de las cajas */
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cabecera {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.cabecera-2 {
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.super-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor {
+  border: 2px solid black;
+  width: 300px;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.caja-1 {
+  background-color: aquamarine;
+}
+.caja-2 {
+  background-color: blue;
+}
+.caja-3 {
+  background-color: blueviolet;
+}
+.caja-4 {
+  background-color: brown;
+}
+.caja-5 {
+  background-color: cadetblue;
+}
+.caja-6 {
+  background-color: cyan;
+}

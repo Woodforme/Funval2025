@@ -1,24 +1,66 @@
 
-.caja-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-    margin: 150px, 100px;
-    padding: 5px, 10px;
-    border: solid, 2px, white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.caja1 {
-   
-    background-color: blue;
-    padding: 30px;
-    margin: 30px 30, 15px,30;
-    border: solid 2px;
+body {
+  height: 100vh;
+  background-color: blanchedalmond;
 }
-.caja2 {
-    background-color: rgb(255, 0, 119);
-    margin: 30px;
-    border: solid 2px;
-    padding: 30px;
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* table {
+  border: solid 2px;
+  padding: 8px;
+  border-collapse: collapse;
+}
+
+thead th {
+  border-bottom: solid 2px;
+  padding: 8px;
+}
+
+tbody td {
+  border: solid 2px;
+  padding: 8px;
+}
+ */
+#formulario {
+  background-color: white;
+  height: 300px;
+  width: 230px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: solid 2px rgba(233, 100, 100, 0.926);
+}
+/* p {
+  margin-right: 110px;
+  text-align: left;
+}
+ */
+.contenedor-p {
+  display: flex;
+  gap: 90px;
+}
+.contenedor-inputs {
+  display: flex;
+  gap: 10px;
+}
+input {
+  width: 100px;
+}
+
+.titulo-formulario {
+  margin-bottom: 50px;
 }

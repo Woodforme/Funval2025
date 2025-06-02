@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor {
+  border: 2px solid black;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  color: white;
+}
+.caja-1 {
+  background-color: aqua;
+  order: 6;
+}
+.caja-2 {
+  background-color: blue;
+  order: 5;
+}
+.caja-3 {
+  background-color: chocolate;
+  order: 3;
+}
+.caja-4 {
+  background-color: blueviolet;
+  order: 1;
+}
+.caja-5 {
+  background-color: darkgreen;
+  order: 2;
+}
+.caja-6 {
+  background-color: darkcyan;
+  order: 4;
+}
+
+/* Estilos base (para xs) */
+
+@media (min-width: 640px) {
+  /* sm: estilos para pantallas ≥ 640px */
+  .contenedor {
+    width: 300px;
+  }
+  .caja-1 {
+    background-color: cyan;
+    order: 1;
+  }
+  .caja-2 {
+    background-color: cyan;
+    order: 2;
+  }
+  .caja-3 {
+    background-color: cyan;
+    order: 3;
+  }
+  .caja-4 {
+    background-color: cyan;
+    order: 4;
+  }
+  .caja-5 {
+    background-color: cyan;
+    order: 5;
+  }
+  .caja-6 {
+    background-color: cyan;
+    order: 6;
+  }
+}
+
+@media (min-width: 768px) {
+  /* md: estilos para pantallas ≥ 768px */
+  .caja-1 {
+    background-color: red;
+    order: 1;
+  }
+  .caja-2 {
+    background-color: blue;
+    order: 4;
+  }
+  .caja-3 {
+    background-color: red;
+    order: 2;
+  }
+  .caja-4 {
+    background-color: blue;
+    order: 5;
+  }
+  .caja-5 {
+    background-color: red;
+    order: 3;
+  }
+  .caja-6 {
+    background-color: blue;
+    order: 6;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg: estilos para pantallas ≥ 1024px */
+  .caja-1 {
+    background-color: red;
+    order: 1;
+  }
+  .caja-2 {
+    background-color: red;
+    order: 5;
+  }
+  .caja-3 {
+    background-color: red;
+    order: 3;
+  }
+  .caja-4 {
+    background-color: blue;
+    order: 6;
+  }
+  .caja-5 {
+    background-color: blue;
+    order: 2;
+  }
+  .caja-6 {
+    background-color: blue;
+    order: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* xl: estilos para pantallas ≥ 1280px */
+}
+
+@media (min-width: 1536px) {
+  /* 2xl: estilos para pantallas ≥ 1536px */
+}
