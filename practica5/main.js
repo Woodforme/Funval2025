@@ -38,7 +38,7 @@
 
     * Si el usuario ingresa una opción no válida o datos incorrectos, el programa mostrará un mensaje de error y solicitará que se ingrese la información nuevamente. */
 let nombreUsuario = prompt("Hola, ingresa tu nombre x favor :")
-alert("Hola " +nombreUsuario+ "listo para la aventura? Presiona ok")
+alert("Hola " + nombreUsuario + ", listo para la aventura? Presiona ok")
 let continuar = true;
 
 while (continuar) {
