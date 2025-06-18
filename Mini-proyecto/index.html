@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio | Desarrollador Web</title>
     <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="./tailwind.config.js">
+    <script src="./script.js" defer></script>
+    <script src="./habilidades.js"></script>
+    <link rel="stylesheet" href="./proyectos.html">
+    <script src="./main.js" defer></script>
 </head>
-<body class="bg-slate-500 text-white">
-    <header class=" py-4 px-6 flex justify-between items-center bg-slate-700">
-        <div class="flex items-center">
-            <img src="./img/Web-devloper.PNG" alt="Logo" class="h-10">
-            <nav class="ml-10">
-                <ul class="flex space-x-8">
-                    <li><a href="#inicio" class="hover:text-white">Inicio</a></li>
-                    <li><a href="#habilidades" class="hover:text-white">Habilidades</a></li>
-                    <li><a href="#proyectos" class="hover:text-white">Proyectos</a></li>
-                </ul>
-            </nav>
-        </div>
-        <button class="bg-amber-200 text-white px-6 py-2 rounded-4xl font-bold hover:bg-opacity-90  border-2 focus:accent-amber-800">
-            Contacto
-        </button>
-    </header>
+<body class="min-h-screen w-screen">
+ <header class="cabecera flex justify-between items-center bg-blue-600 text-white w-full px-4 py-4 md:py-8 mx-auto md:max-w-4xl dark:bg-slate-800">
+  <!-- Logo -->
+  <div class="flex items-center">
+    <img src="./img/Web-devloper.PNG" alt="Logo" class="h-10">
+  </div>
+
+  <!-- Navegación para desktop (oculto en móviles) -->
+  <nav class="flex items-center">
+    <ul class="flex space-x-8">
+      <li><a href="#inicio" class="text-white hover:text-amber-200 transition-colors">Inicio</a></li>
+      <li><a href="#habilidades" class="text-white hover:text-amber-200 transition-colors">Habilidades</a></li>
+      <li><a href="#proyectos" class="text-white hover:text-amber-200 transition-colors">Proyectos</a></li>
+    </ul>
+  </nav>
+  <button id="menu-toggle" class="block md:hidden bg-amber-200 text-slate-800 px-4 py-2 rounded-md font-bold hover:bg-amber-300">
+  Menú
+</button>
+
+<!-- Botón Contacto solo en md+ -->
+<button class="hidden md:block bg-amber-200 text-slate-800 px-6 py-2 rounded-full font-bold hover:bg-amber-300">
+  Contacto
+</button>
+
+</header>
 
     <!-- Sección Principal -->
     <section id="inicio" class="bg-gradient-to-bl from-yellow-100 py-20 px-6 flex items-center">
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-5xl font-bold mb-4">Hola, soy <span class="text-amber-50">WOODLEINE FORMETUS</span></h1>
+                <h1 class="text-5xl font-bold mb-4">Hola, soy <span class="text-black">WOODLEINE FORMETUS</span></h1>
                 <h2 class="text-3xl mb-6">Desarrollador <span class="text-">Full Stack</span></h2>
-                <a href="#proyectos" class="bg-green-300 text-dark px-8 py-3 rounded-md font-bold text-lg inline-block">
+                <a href="./proyectos.html" class="bg-green-300 text-dark px-8 py-3 rounded-md font-bold text-lg inline-block">
                     Ver mis proyectos
                 </a>
             </div>
@@ -57,11 +69,11 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-gray-300 p-4 rounded-3xl text-center">
                             <span class="text-amber-50 text-2xl font-bold"></span>
-                            <p>Proyectos full-stack</p>
+                            <a href="../PracticaEnClase/index.html">Proyectos hechos en clase</a>
                         </div>
                         <div class="bg-gray-300 p-4 rounded-3xl text-center">
                             <span class="text-amber-50 text-2xl font-bold"></span>
-                            <p>Proyectos Front-end</p>
+                            <a href="../index.html">Practicas calificadas</a>
                         </div>
                         <div class="bg-gray-300 p-4 rounded-3xl text-center">
                             <span class="text-amber-50 text-2xl font-bold">100%</span>
@@ -78,113 +90,52 @@
     </section>
 
     <section id="habilidades" class="py-16 px-6 bg-gradient-to-r from-emerald-200">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-10 text-center">Mis Habilidades</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-                 
-                <div class="bg-blue-300 p-6 rounded-lg text-center hover:transform hover:scale-105 transition">
-                    <img src="./img/html-icono.jpeg" alt="HTML" class="h-16 mx-auto mb-4">
-                    <h3 class="font-bold">HTML5</h3>
-                </div>
-                <div class="bg-blue-300 p-6 rounded-lg text-center hover:transform hover:scale-105 transition">
-                    <img src="./img/css-icono1.png" alt="CSS" class="h-16 mx-auto mb-4">
-                    <h3 class="font-bold">CSS</h3>
-                </div>
-                <div class="bg-blue-300 p-6 rounded-lg text-center hover:transform hover:scale-105 transition">
-                    <img src="./img/java-icon.png" alt="JAVA" class="h-16 mx-auto mb-4">
-                    <h3 class="font-bold">JAVA</h3>
-                </div>
-                <div class="bg-blue-300 p-6 rounded-lg text-center hover:transform hover:scale-105 transition">
-                    <img src="./img/javascript-icon.png" alt="JavaScript" class="h-16 mx-auto mb-4">
-                    <h3 class="font-bold">JAVASCRIPT</h3>
-                </div>
-                <div class="bg-blue-300 p-6 rounded-lg text-center hover:transform hover:scale-105 transition">
-                    <img src="./img/tailwindcss-icon.png" alt="tailwind" class="h-16 mx-auto mb-4">
-                    <h3 class="font-bold">TAILWIND</h3>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <button class="bg-yellow-100 text-black px-8 py-3 rounded-md font-bold text-lg inline-flex items-center">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                    </svg>
-                    Descargar CV
-                </button>
-            </div>
-        </div>
     </section>
 
     <section id="proyectos" class="py-16 px-6 bg-blue-300">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-10 text-center">Proyectos Destacados</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-300 bg-opacity-10 rounded-lg overflow-hidden hover:shadow-lg transition">
-                    <img src="https://github.com/Generation-Chile-Java/libretadenotas-Woodforme/commit/0a330ac2f98327775a472f882fc4e47def50a1e5#diff-61d282801810720ceed1e754ac2653b498497857291a598d27475943ce3f1c60R1-R13" alt="Proyecto 1" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Proyecto libreria de nota</h3>
-                        <p class="text-gray-200 mb-4">Java con POO</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-amber-50 bg-opacity-20 text-black px-3 py-1 rounded-full text-xs">React</span>
-                            <span class="bg-amber-50 bg-opacity-20 text-black px-3 py-1 rounded-full text-xs">Node.js</span>
-                            <span class="bg-amber-50 bg-opacity-20 text-black px-3 py-1 rounded-full text-xs">Spring boot</span>
-                        </div>
-                        <a href="#" class="text-green-200 hover:underline flex items-center">
-                            Ver proyecto
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                        <a href="./Practica"></a>
-                    </div>
-                    
-                </div>
-                <div class="bg-gray-300 bg-opacity-10 rounded-lg overflow-hidden hover:shadow-lg transition">
-                    <img src="./Hotel-Belen.PNG" alt="Proyecto 2" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Hotel Belen</h3>
-                        <p class="text-gray-200 mb-4">HTml, CSS</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-amber-50 bg-opacity-20 text-black px-3 py-1 rounded-full text-xs">html</span>
-                            <span class="bg-amber-50 bg-opacity-20 text-black px-3 py-1 rounded-full text-xs">Css</span>
-                        </div>
-                        <a href="#" class="text-green-200 hover:underline flex items-center">
-                            Ver proyecto
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </a>
-                        <a href="./Practica"></a>
-                    </div>
-                    
-                </div>
-    
+      <div class="text-center mt-12">
+                <button class="cursor-pointer bg-yellow-100 text-black px-8 py-3 rounded-md font-bold text-lg inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    <a href="./proyectos.html">Mis proyectos destacados</a>
+                </button>
             </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="py-16 px-6 gradient-main">
+    <section id="contacto-form form" class="py-16 px-6 gradient-main">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-10 text-center">Contacto</h2>
             <form class="bg-deepBlue p-8 rounded-lg">
-                <div class="mb-6">
-                    <label for="nombre" class="block mb-2">Nombre</label>
-                    <input type="text" id="nombre" class="w-full p-3 bg-dark border border-softGray rounded-md focus:outline-none focus:ring-2 focus:ring-highlight">
-                </div>
-                <div class="mb-6">
-                    <label for="email" class="block mb-2">Correo electrónico</label>
-                    <input type="email" id="email" class="w-full p-3 bg-dark border border-softGray rounded-md focus:outline-none focus:ring-2 focus:ring-white">
-                </div>
-                <div class="mb-6">
-                    <label for="mensaje" class="block mb-2">Mensaje</label>
-                    <textarea id="mensaje" rows="5" class="w-full p-3 bg-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-white"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-yellow-50 text-black py-3 rounded-md font-bold text-lg hover:bg-opacity-90 transition">
+             <label
+            for="nombre"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nombre</label
+          >
+          <input id="nombre"
+            type="text"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="ingrese su nombre"
+            required/>
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Your email</label>
+          <input id="email"
+            type="email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="ingrese su email"
+            require/><br><br>
+          <label
+            for="Mensaje"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Mensaje</label>
+          <textarea id="mensaje" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deje su mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
+              <button type="submit" class="w-full bg-yellow-50 text-black py-3 rounded-md font-bold text-lg hover:bg-opacity-90 transition">
                     Enviar mensaje
-                </button>
+              </button>
             </form>
         </div>
     </section>
-    <footer class="bg-slate-500 py-8 px-6 text-center text-gray-100">
+    <footer class="bg-slate-500 py-8 px-6 text-center text-gray-100 dark:bg-slate-800">
         <p>© 2025 Mi Portafolio. Todos los derechos reservados.</p>
         <p class="mt-2">Desarrollado con ❤️ y código</p>
       <div class="w-full flex justify-center">
@@ -264,10 +215,24 @@
             d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
             clip-rule="evenodd"
           />
-          <a href="https://github.com/Woodforme/"></a>
+          <a href="https://github.com/Woodforme/">  icon: "💻" </a>
         </svg>
       </div>
+      <label class="max-w-screen-xl relative inline-flex items-center cursor-pointer">
+       <input type="checkbox" id="botoncito" class="sr-only peer" />
+       <div class="w-11 h-6 bg-gray-300 rounded-full peer dark:bg-gray-600 peer-checked:bg-gray-300 transition-colors">
+       </div>
+       <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-full peer-checked:bg-gray-800">
+       </div>
+   </label>
+ </footer>
+ 
+    <script>
+        let btn = document.querySelector("#botoncito");
 
-    </footer>
+        btn.addEventListener("click", function () {
+          document.documentElement.classList.toggle("dark");
+        });
+    </script>
 </body>
 </html>
