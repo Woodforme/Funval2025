@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./output.css">
+
+    <style>
+        .board-cell {
+            aspect-ratio: 1/1;
+            box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.1s ease;
+        }
+        .board-cell:active {
+            transform: translateY(4px);
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+        }
+        .btn:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+        #resultModal {
+            display: none;
+        }
+    </style>
+<body class="bg-gray-400 text-white min-h-screen flex items-center justify-center p-4 font-[Arial]">
+    <div class="w-full max-w-md">
+
+        <header class="flex items-center mb-8 gap-2 bg-green-200 p-5">
+            <div class="flex items-center">
+                <i class="fas fa-times text-white text-xl mr-2"></i>
+                <i class="fas fa-circle text-white text-xl"></i>
+            </div>
+            <div id="turnIndicator" class="flex bg-slate-800 rounded-lg p-2 shadow-md mt-4">
+                <div id="xTurn" class="flex items-center justify-center px-4 py-2 rounded-lg bg-sky-300 text-black font-bold text-sm">
+                    <i class="fas fa-times mr-2"></i>
+                    <span>TURNO</span>
+                </div>
+                <div id="oTurn" class="flex items-center justify-center px-4 py-2 rounded-lg opacity-50 font-bold text-sm ml-2">
+                    <i class="fas fa-circle mr-2"></i>
+                    <span>TURNO</span>
+                </div>
+            </div>
+        </header>
+        <div class="md:grid grid-cols-2 gap-4">
+        <div class="contenedor1">
+        <!-- Game Board -->
+        <div id="gameBoard" class="grid grid-cols-3 gap-4 mb-8">
+        </div>
+        </div>
+        <div class="contenedor2">
+        <!-- Score Board -->
+        <div class="grid grid-cols-3 gap-3 mb-8">
+            <div class="bg-green-300 text-black rounded-lg p-6 text-center font-bold">
+                <span class="block text-sm">X (TÚ)</span>
+                <span id="xScore" class="block text-xl">0</span>
+            </div>
+            <div class="bg-gray-500 text-gray-800 rounded-lg p-6 text-center font-bold">
+                <span class="block text-sm">EMPA</span>
+                <span id="tiesScore" class="block text-sm">0</span>
+            </div>
+            <div class="bg-green-300 text-gray-800 rounded-lg p-6 text-center font-bold">
+                <span class="block text-sm">O (CPU)</span>
+                <span id="oScore" class="block text-sm">0</span>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="flex justify-center space-x-4">
+            <button id="restartBtn" class="btn bg-gray-100 text-[#1a2a33] px-6 py-3 rounded-lg font-bold shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)] hover:bg-gray-300 transition">
+                <i class="fas fa-redo mr-2"></i> Reiniciar
+            </button>
+            <button id="newGameBtn" class="btn bg-green-300 text-[#1a2a33] px-6 py-3 rounded-lg font-bold shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)] hover:bg-amber-300 transition">
+                <i class="fas fa-plus-circle mr-2"></i> Nuevo juego
+            </button>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Result Modal -->
+    <div id="resultModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+        <div class="bg-slate-800 rounded-2xl p-8 max-w-sm w-full text-center shadow-lg">
+            <h4 id="resultTitle" class="text-gray-400 font-bold text-lg mb-4"></h4>
+            <div id="resultIcon" class="flex flex-col items-center mb-6">
+                <span id="resultText" class="text-gray-400 text-sm"></span>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <button id="quitBtn" class="btn bg-gray-400 text-black px-4 py-2 rounded-lg font-bold text-sm shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)] hover:bg-gray-300 transition">
+                    Salir
+                </button>
+                <button id="nextRoundBtn" class="btn bg-green-300 text-black px-4 py-2 rounded-lg font-bold text-sm shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)] hover:bg-amber-300 transition">
+                    Siguiente ronda
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
