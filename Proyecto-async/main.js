@@ -13,10 +13,10 @@ async function fetchUsers() {
     data.forEach((user) => {
       userContainer.innerHTML += `
         <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-50">
-          <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">${user.name}</h3>
-          <p class="font-normal text-gray-700">@${user.username}</p>
-          <p class="font-normal text-gray-700">${user.email}</p>
-          <p class="font-normal text-gray-700">${user.company.name}</p>
+          <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><strong>Name: </strong>${user.name}</h3>
+          <p class="font-normal text-gray-700"><strong>Username: </strong>${user.username}</p>
+          <p class="font-normal text-gray-700"><strong>E-mail: </strong>${user.email}</p>
+          <p class="font-normal text-gray-700"><strong>Company-Name: </strong>${user.company.name}</p>
         </div>
       `;
     });
